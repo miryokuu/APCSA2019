@@ -21,12 +21,11 @@ import java.lang.Math;
 
 class Lesson_5_Activity_Three {
     public static void main(String[] args) {
-      
-        /* Write your code here 
-         * Copy and paste your entire code to Code Runner to complete the activity, 
-         * from the first import statement to the last bracket. 
-        */
-
+        Scanner input = new Scanner(System.in);
+        int r = input.nextInt();
+        
+        System.out.println(String.format("Circumference: %.2f\nArea: %.2f", 2*Math.PI*r, Math.PI*Math.pow(r,2)));
+        input.close();
 
     }
 }
