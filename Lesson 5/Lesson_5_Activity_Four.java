@@ -18,12 +18,11 @@ import java.lang.Math;
 
 class Lesson_5_Activity_Four {
     public static void main(String[] args) {
-      
-        /* Write your code here 
-         * Copy and paste your entire code to Code Runner to complete the activity, 
-         * from the first import statement to the last bracket. 
-        */
+        Scanner input = new Scanner(System.in);
+        float money = input.nextFloat();
 
+        System.out.println(String.format("Change from $20: $%.2f", 20 - money));
+        input.close();
 
     }
 }
