@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-* You're a student in compsci at LAHS
+* You're a student in compsci at LAHS (meaning i can see you irl)
 * Java knowledge
 * Git knowledge (pls)
 * (Recommended) use Eclipse IDE
