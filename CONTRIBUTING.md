@@ -15,3 +15,4 @@
 * Files will be seperated by lessons and has to preserve the template name.
 * Your code should have 0 warnings unless inevitable.
 * enums (if i use) should be UPPER_SNAKE_CASE
+* try to leave it clean as possible
