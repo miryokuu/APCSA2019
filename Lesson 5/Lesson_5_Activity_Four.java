@@ -14,7 +14,6 @@ Change from $20: $16.5
 */
 
 import java.util.Scanner;
-import java.lang.Math;
 
 class Lesson_5_Activity_Four {
     public static void main(String[] args) {

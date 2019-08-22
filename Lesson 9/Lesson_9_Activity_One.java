@@ -6,7 +6,6 @@
 */
 
 import java.lang.Math;
-import java.security.SecureRandom;
 
 class Lesson_9_Activity_One {
     public static void main(String[] args) {

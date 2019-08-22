@@ -12,7 +12,6 @@ Answer: 57
 */
 
 import java.util.Scanner;
-import java.lang.Math;
 
 class Lesson_6_Activity_Two {
     public static void main(String[] args) {

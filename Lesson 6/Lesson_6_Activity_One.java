@@ -21,7 +21,6 @@ The average is: 7.5
 */
 
 import java.util.Scanner;
-import java.lang.Math;
 
 class Lesson_6_Activity_One {
     public static void main(String[] args) {

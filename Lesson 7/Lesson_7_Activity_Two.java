@@ -21,7 +21,6 @@ Here are the digits:
 */
 
 import java.util.Scanner;
-import java.lang.Math;
 
 class Lesson_7_Activity_Two {
     public static void main(String[] args) {
