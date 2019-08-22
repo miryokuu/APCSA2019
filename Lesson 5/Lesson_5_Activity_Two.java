@@ -10,12 +10,13 @@ import java.lang.Math;
 
 class Lesson_5_Activity_Two {
     public static void main(String[] args) {
-      
-        /* Write your code here 
-         * Copy and paste your entire code to Code Runner to complete the activity, 
-         * from the first import statement to the last bracket. 
-        */
-
-
+        Scanner input = new Scanner(System.in);
+        int num = 0;
+        
+        num += input.nextInt();
+        num += input.nextInt();
+        num += input.nextInt();
+        
+        System.out.println(num);
     }
 }
