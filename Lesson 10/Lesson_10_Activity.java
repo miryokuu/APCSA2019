@@ -20,17 +20,16 @@
 */
 
 import java.util.Scanner;
-import java.lang.Math;
-
 
 class Lesson_10_Activity {
     public static void main(String[] args) {
-      
-        /* Write your code here 
-         * Copy and paste your entire code to Code Runner to complete the activity, 
-         * from the first import statement to the last bracket. 
-        */
-
-
+        Scanner input = new Scanner(System.in);
+        Double[] data = new Double[2];
+        
+        data[0] = input.nextDouble();
+        data[1] = input.nextDouble();
+        
+        System.out.println((double)((int)(data[0] * 100000) - (int)(data[1] * 100000))/100000);
+        input.close();
     }
 }
