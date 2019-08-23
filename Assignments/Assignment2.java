@@ -28,18 +28,3 @@ public class Assignment2 {
 		System.out.println(String.format("Year: %d\nMonth: %d\nDay: %d\nHour: %d\nMin: %d\nSec: %d", 1970 + year, month, day, hour, min, seconds));
 	}
 }
-
-
-/*
-
-Seconds Since Unix Epoch:
-999999999
-
-Year: 2002
-Month: 1
-Day: 24
-Hour: 1
-Min: 46
-Sec: 39
-
-*/
