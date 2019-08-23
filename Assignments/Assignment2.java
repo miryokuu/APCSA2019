@@ -26,5 +26,6 @@ public class Assignment2 {
 		seconds = (int)(epochtime % 60);
 		
 		System.out.println(String.format("Year: %d\nMonth: %d\nDay: %d\nHour: %d\nMin: %d\nSec: %d", 1970 + year, month, day, hour, min, seconds));
+		input.close();
 	}
 }
