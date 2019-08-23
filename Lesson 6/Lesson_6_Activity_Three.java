@@ -21,9 +21,9 @@ class Lesson_6_Activity_Three {
         Scanner input = new Scanner(System.in);
         double in = 0;
         
-        in += input.nextDouble();
+        in = input.nextDouble();
         
-        System.out.println(String.format("Answer %d", Math.ceil(in)));
+        System.out.println(String.format("Answer %d", (int)((in - (int)in)*100)));
         input.close();
     }
 }
