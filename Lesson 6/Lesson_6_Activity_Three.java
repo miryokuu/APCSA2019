@@ -14,7 +14,6 @@ Answer: 89
 */
 
 import java.util.Scanner;
-import java.lang.Math;
 
 class Lesson_6_Activity_Three {
     public static void main(String[] args) {
