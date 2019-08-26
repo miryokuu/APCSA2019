@@ -10,12 +10,13 @@
 import java.util.Scanner;
 
 class Lesson_13_Activity_Five {
-    public static int numgen() { return (int)(Math.random() * 12) + 1; }
+	public static int numgen(int max) { return (int)(Math.random() * max); }
+    public static int numgen(int max, int offset) { return (int)(Math.random() * max) + offset; }
     
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        Integer firstNum = numgen(), SecondNum = numgen();
+        Integer firstNum = numgen(12, 1), SecondNum = numgen(12, 1);
         
         System.out.println(input.nextInt() == (firstNum * SecondNum) ? "Correct!" : "Wrong");
         input.close();
