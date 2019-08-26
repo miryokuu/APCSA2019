@@ -25,12 +25,12 @@ import java.util.Scanner;
 
 class Lesson_12_Activity_Four {
     public static void main(String[] args)
-     {
-     /*
-      * Write your code here
-      * Copy and paste your entire program to Code Runner
-      * to complete the activity, from the first import statement
-      * to the last bracket.
-      */
+    {
+        Scanner input = new Scanner(System.in);
+        float temp;
+        
+        temp = input.nextFloat();
+        System.out.println(temp >= 99 && temp <= 102 ? null : "WARNING");
+        input.close();
     }
 }

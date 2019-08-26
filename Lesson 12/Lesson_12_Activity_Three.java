@@ -25,5 +25,6 @@ class Lesson_12_Activity_Three {
     	Scanner input = new Scanner(System.in);
     	double score = input.nextDouble();
     	System.out.println((score > 100.0d) || (score < 0.0d) ? "Not Valid" : "Valid");
+    	input.close();
     }
 }
