@@ -40,12 +40,28 @@ import java.util.Scanner;
 
 class Lesson_14_Activity_Three {
     public static void main(String[] args)
-     {
-     /*
-      * Write your code here
-      * Copy and paste your entire program to Code Runner
-      * to complete the activity, from the first import statement
-      * to the last bracket.
-      */
+    {
+        Scanner input = new Scanner(System.in);
+        Integer[] ip = new Integer[4];
+        String ipString = "IP Address: ";
+        boolean invalid = false;
+        
+        ip[0] = input.nextInt();
+        ip[1] = input.nextInt();
+        ip[2] = input.nextInt();
+        ip[3] = input.nextInt();
+        
+        for(int loop = 0; loop < ip.length; loop++) 
+        {
+        	ipString += loop == 3 ? ip[loop].toString() : ip[loop].toString() + ".";
+        	if(ip[loop] > 255 || ip[loop] < 0)
+        	{
+        		invalid = true;
+        		System.out.println(String.format("Octet %d is incorrect", loop + 1));
+        	}
+        }
+        
+        System.out.println(invalid ? null : ipString);
+        input.close();
     }
 }

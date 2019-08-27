@@ -10,12 +10,9 @@ import java.util.Scanner;
 
 class Lesson_14_Activity_Two {
     public static void main(String[] args)
-     {
-     /*
-      * Write your code here
-      * Copy and paste your entire program to Code Runner
-      * to complete the activity, from the first import statement
-      * to the last bracket.
-      */
+    {
+        Scanner input = new Scanner(System.in);       
+        System.out.println((input.nextInt() > -1) && (input.nextInt() > -1) ? "Both are positive or zero." : "One or both are negative.");
+        input.close();
     }
 }
