@@ -27,12 +27,13 @@ import java.lang.Math;
 
 class Lesson_17_Activity_Two {
     public static void main(String[] args)
-     {
-/*
- * Write your code here
- * Copy and paste your entire program to Code Runner
- * to complete the activity, from the first import statement
- * to the last bracket.
- */
-}
+    {
+    	Scanner input = new Scanner(System.in);
+    	Integer[] numBetween = new Integer[2];
+    	
+    	numBetween[0] = input.nextInt();
+    	numBetween[1] = input.nextInt();
+    	
+    	
+    }
 }
