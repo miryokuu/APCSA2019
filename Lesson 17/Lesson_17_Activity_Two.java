@@ -34,6 +34,14 @@ class Lesson_17_Activity_Two {
     	numBetween[0] = input.nextInt();
     	numBetween[1] = input.nextInt();
     	
-    	
+    	while (numBetween[0] <= numBetween[1]) 
+    	{
+    		if ((numBetween[0] % 2) == 0) 
+    		{
+        		System.out.print(numBetween[0] + " ");	
+    		}
+    		numBetween[0]++;
+    	}
+    	input.close();
     }
 }
