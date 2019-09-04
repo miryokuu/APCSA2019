@@ -23,7 +23,6 @@
  */ 
 
 import java.util.Scanner;
-import java.lang.Math; 
 
 class Lesson_17_Activity_Two {
     public static void main(String[] args)
