@@ -81,10 +81,10 @@ class S_FARTHESTDATA {
     
     S_FARTHESTDATA()
     {
-        this.north = -91d;
-        this.south = 91d;
-        this.east = -181d;
-        this.west = 181d;
+        this.north = -90d;
+        this.south = 90d;
+        this.east = -180d;
+        this.west = 180d;
     }
 }
 
