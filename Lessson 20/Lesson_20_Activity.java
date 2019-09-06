@@ -103,7 +103,7 @@ class Lesson_20_Activity {
             System.out.println("Please enter the longitude:");
             dataTemp[1] = input.nextDouble();   //  longitude
             
-            if(Math.abs(dataTemp[0]) <= 90.0d && Math.abs(dataTemp[0]) <= 180.0d) 
+            if(Math.abs(dataTemp[0]) <= 90.0d && Math.abs(dataTemp[1]) <= 180.0d) 
             {
                 farthestData.north = farthestData.north < dataTemp[0] ? dataTemp[0] : farthestData.north;
                 farthestData.south = farthestData.south > dataTemp[0] ? dataTemp[0] : farthestData.south;
