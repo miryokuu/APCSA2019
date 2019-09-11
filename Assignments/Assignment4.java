@@ -4,7 +4,7 @@ public class Assignment4 {
     public static void main(String[] args)
     {
     	Scanner input = new Scanner(System.in);
-    	String replacedString = input.nextLine();
+    	String inputString = input.nextLine(), replacedString = "";
     	String[] splitString = replacedString.split(" ");
     	int repeatedCount = 0, vowelCount = 0;
     	
@@ -16,9 +16,12 @@ public class Assignment4 {
     	}
     	
     	for(String indexString : splitString) {
-
-    		
-    		
+    		// replace duplicates
+    		for () 
+    		{
+    			// nested for loops are nightmare but i'm lazy to think of better way
+    		}
+    		replacedString += indexString;
     	}
     	
     	while (replacedString.toLowerCase().indexOf("a") != -1 || replacedString.toLowerCase().indexOf("e") != -1 ||
@@ -28,7 +31,6 @@ public class Assignment4 {
     		replacedString = replacedString.replaceFirst("([a,e,i,o,u])", "");
     		vowelCount++;
     	}
-    	
     	
     	System.out.println(String.format("Repeated letters removed: %d\nVowels removed: %d\nTotal characters saved: %d", 
     			repeatedCount, vowelCount, repeatedCount+vowelCount));
