@@ -18,17 +18,20 @@
   
 */ 
 
-import java.util.Scanner;
-import java.lang.Math; 
+import java.util.Scanner; 
 
 class Lesson_22_Activity_Two {
     public static void main(String[] args)
-     {
-/*
- * Write your code here
- * Copy and paste your entire program to Code Runner
- * to complete the activity, from the first import statement
- * to the last bracket.
- */
-}
+    {
+    	Scanner input = new Scanner(System.in);
+    	String str = input.nextLine(), tabs = "";
+    	
+    	// "Hint: You may need more than one loop." NO YOU DONT GOTTEM BOIS
+    	for (int i=0; i < str.length(); i++)
+    	{
+    		System.out.println(tabs + str.charAt(i));
+    		tabs += "\t";
+    	}
+    	input.close();
+    }
 }
