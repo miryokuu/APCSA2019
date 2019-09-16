@@ -5,14 +5,16 @@
  * Print "One or both are negative." otherwise.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_14_Activity_Two {
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);       
-        System.out.println((input.nextInt() > -1) && (input.nextInt() > -1) ? "Both are positive or zero." : "One or both are negative.");
+        Scanner input = new Scanner(System.in);
+        System.out.println(
+                (input.nextInt() > -1) && (input.nextInt() > -1) ? "Both are positive or zero."
+                        : "One or both are negative."
+        );
         input.close();
     }
 }

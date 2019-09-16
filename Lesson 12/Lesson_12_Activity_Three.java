@@ -16,15 +16,14 @@
  * 
  */
 
-
 import java.util.Scanner;
 
 class Lesson_12_Activity_Three {
     public static void main(String[] args)
     {
-    	Scanner input = new Scanner(System.in);
-    	double score = input.nextDouble();
-    	System.out.println((score > 100.0d) || (score < 0.0d) ? "Not Valid" : "Valid");
-    	input.close();
+        Scanner input = new Scanner(System.in);
+        double score = input.nextDouble();
+        System.out.println((score > 100.0d) || (score < 0.0d) ? "Not Valid" : "Valid");
+        input.close();
     }
 }

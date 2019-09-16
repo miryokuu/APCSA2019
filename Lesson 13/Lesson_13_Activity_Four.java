@@ -5,7 +5,6 @@
  * You can assume that an integer between 0 and 4 will be input.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_13_Activity_Four {
@@ -13,9 +12,9 @@ class Lesson_13_Activity_Four {
     {
         Scanner input = new Scanner(System.in);
         Integer num;
-        
+
         num = input.nextInt();
-        switch(num) 
+        switch (num)
         {
         case 0:
             System.out.println("F");

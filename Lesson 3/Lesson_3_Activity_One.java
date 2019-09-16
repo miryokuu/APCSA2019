@@ -1,3 +1,4 @@
+
 /*
  * Lesson 3 Coding Activity Question 1
  * 
@@ -11,10 +12,11 @@ Hi ______, nice to see you.
 import java.util.Scanner;
 
 class Lesson_3_Activity_One {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
-        
+
         System.out.println(String.format("Hi %s, nice to see you.", name));
         input.close();
     }

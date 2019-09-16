@@ -1,3 +1,4 @@
+
 /*
  * Lesson 9 Coding Activity Question 3
  *
@@ -8,7 +9,8 @@
 import java.lang.Math;
 
 class Lesson_9_Activity_Three {
-    public static void main(String[] args) {
-        System.out.println((int)(Math.random()*(21)) + 20);
+    public static void main(String[] args)
+    {
+        System.out.println((int) (Math.random() * (21)) + 20);
     }
 }

@@ -1,3 +1,4 @@
+
 /*
  * Lesson 3 Coding Activity Question 2
  * 
@@ -17,10 +18,11 @@ Zena Zeb Zoey
 import java.util.Scanner;
 
 class Lesson_3_Activity_Two {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         String[] name = new String[3];
-        
+
         System.out.println("Please enter three names:");
         name[0] = input.nextLine();
         name[1] = input.nextLine();

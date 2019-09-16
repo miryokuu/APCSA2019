@@ -1,3 +1,4 @@
+
 /*
  * Lesson 4 Coding Activity Question 1
  * 
@@ -17,13 +18,14 @@
 import java.util.Scanner;
 
 class Lesson_4_Activity_One {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         double[] nums = new double[2];
-        
+
         nums[0] = input.nextDouble();
         nums[1] = input.nextDouble();
-        
+
         System.out.println(nums[1] + " " + nums[0]);
         input.close();
     }

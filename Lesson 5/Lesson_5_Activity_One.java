@@ -1,3 +1,4 @@
+
 /*
  * Lesson 5 Coding Activity Question 1
  * 
@@ -9,13 +10,14 @@
 import java.util.Scanner;
 
 class Lesson_5_Activity_One {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         double first, second;
-        
+
         first = input.nextDouble();
         second = input.nextDouble();
-        
+
         System.out.println(second - first);
         input.close();
     }

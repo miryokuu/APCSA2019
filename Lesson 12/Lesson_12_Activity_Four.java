@@ -20,7 +20,6 @@
  * 
  */
 
-
 import java.util.Scanner;
 
 class Lesson_12_Activity_Four {
@@ -28,7 +27,7 @@ class Lesson_12_Activity_Four {
     {
         Scanner input = new Scanner(System.in);
         float temp;
-        
+
         temp = input.nextFloat();
         System.out.println(temp >= 99 && temp <= 102 ? null : "WARNING");
         input.close();

@@ -1,3 +1,4 @@
+
 /*
  * Lesson 6 Coding Activity Question 2
  *
@@ -14,13 +15,14 @@ Answer: 57
 import java.util.Scanner;
 
 class Lesson_6_Activity_Two {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         double in = 0;
-        
+
         in += input.nextDouble();
-        
-        System.out.println(String.format("Answer %d", (int)in));
+
+        System.out.println(String.format("Answer %d", (int) in));
         input.close();
     }
 }

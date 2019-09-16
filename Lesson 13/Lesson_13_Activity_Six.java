@@ -24,7 +24,6 @@
  * 
  */
 
-
 import java.util.Scanner;
 
 class Lesson_13_Activity_Six {
@@ -32,7 +31,7 @@ class Lesson_13_Activity_Six {
     {
         Scanner input = new Scanner(System.in);
         float temp;
-        
+
         temp = input.nextFloat();
         System.out.println(temp >= 99 && temp <= 102 ? "Temperature is OK" : "WARNING");
         input.close();

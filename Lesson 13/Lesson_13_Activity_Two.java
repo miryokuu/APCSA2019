@@ -4,7 +4,6 @@
  * if it's greater than or equal to 60, and print "failing" otherwise.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_13_Activity_Two {
@@ -12,9 +11,9 @@ class Lesson_13_Activity_Two {
     {
         Scanner input = new Scanner(System.in);
         Integer num;
-        
+
         num = input.nextInt();
-        
+
         System.out.println(num >= 60 ? "passing" : "failing");
         input.close();
     }

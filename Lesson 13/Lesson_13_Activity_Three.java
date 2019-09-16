@@ -4,7 +4,6 @@
  * You should be able to do this with only one if statement but you may use multiple else statements.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_13_Activity_Three {
@@ -12,10 +11,10 @@ class Lesson_13_Activity_Three {
     {
         Scanner input = new Scanner(System.in);
         Integer firstInput, secondInput;
-        
+
         firstInput = input.nextInt();
         secondInput = input.nextInt();
-        
+
         System.out.println(firstInput == secondInput ? "EQUAL" : firstInput > secondInput ? firstInput : secondInput);
         input.close();
     }

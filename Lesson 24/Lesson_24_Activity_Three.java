@@ -1,3 +1,4 @@
+
 /*
  * Lesson 24 Coding Activity 3
  * Input an int between 0 and 100 and print the numbers between it and 100. 
@@ -21,27 +22,31 @@
  *         error     
  * 
  * 
- */ 
+ */
 
 import java.util.Scanner;
 
 class Lesson_24_Activity_Three {
     public static void main(String[] args)
     {
-    	@SuppressWarnings("resource")
-		int num = new Scanner(System.in).nextInt();
-    	String payload = "";
-    	
-    	if (num > 100 || num < 0) { System.out.println("error"); return; }
-    	for (; num < 100; num++) 
-    	{
-    		if(payload.split(" ").length >= 20)
-    		{
-    			System.out.println(payload);
-    			payload = "";
-    		}
-    		payload = payload + num + " ";
-    	}
-    	System.out.println(payload);
+        @SuppressWarnings("resource")
+        int num = new Scanner(System.in).nextInt();
+        String payload = "";
+
+        if (num > 100 || num < 0)
+        {
+            System.out.println("error");
+            return;
+        }
+        for (; num < 100; num++)
+        {
+            if (payload.split(" ").length >= 20)
+            {
+                System.out.println(payload);
+                payload = "";
+            }
+            payload = payload + num + " ";
+        }
+        System.out.println(payload);
     }
 }

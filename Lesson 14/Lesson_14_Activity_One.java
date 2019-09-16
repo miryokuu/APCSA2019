@@ -15,7 +15,6 @@
  * 
  */
 
-
 import java.util.Scanner;
 
 class Lesson_14_Activity_One {
@@ -23,7 +22,7 @@ class Lesson_14_Activity_One {
     {
         Scanner input = new Scanner(System.in);
         Integer num = input.nextInt();
-        
+
         System.out.println(num >= 5 && num <= 76 ? "False" : "True");
         input.close();
     }

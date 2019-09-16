@@ -19,22 +19,22 @@
  * 
  */
 
-
 import java.util.Scanner;
 
 class Lesson_12_Activity_Two {
     public static void main(String[] args)
     {
-    	Scanner input = new Scanner(System.in);
-    	float firstInput, secondInput;
-    	
-    	firstInput = input.nextFloat();
-    	secondInput = input.nextFloat();
-    	
-    	//	System.out.println(String.format("Largest is: %.1f", (firstInput > secondInput) ? firstInput : secondInput));
-    	//	Broken REEEE
-    	
-    	System.out.println("Largest is: " + ((firstInput > secondInput) ? firstInput : secondInput));
-    	input.close();
+        Scanner input = new Scanner(System.in);
+        float firstInput, secondInput;
+
+        firstInput = input.nextFloat();
+        secondInput = input.nextFloat();
+
+        // System.out.println(String.format("Largest is: %.1f", (firstInput >
+        // secondInput) ? firstInput : secondInput));
+        // Broken REEEE
+
+        System.out.println("Largest is: " + ((firstInput > secondInput) ? firstInput : secondInput));
+        input.close();
     }
 }

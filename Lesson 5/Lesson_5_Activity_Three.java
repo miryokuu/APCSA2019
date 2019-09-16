@@ -1,3 +1,4 @@
+
 /*
  * Lesson 5 Coding Activity Question 3
  * 
@@ -20,11 +21,12 @@ import java.util.Scanner;
 import java.lang.Math;
 
 class Lesson_5_Activity_Three {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         int r = input.nextInt();
-        
-        System.out.println(String.format("Circumference: %.2f\nArea: %.2f", 2*Math.PI*r, Math.PI*Math.pow(r,2)));
+
+        System.out.println(String.format("Circumference: %.2f\nArea: %.2f", 2 * Math.PI * r, Math.PI * Math.pow(r, 2)));
         input.close();
 
     }

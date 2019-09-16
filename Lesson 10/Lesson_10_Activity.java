@@ -1,3 +1,4 @@
+
 /*
  * Lesson 10 Coding Activity Question 1
  * 
@@ -22,14 +23,15 @@
 import java.util.Scanner;
 
 class Lesson_10_Activity {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         Double[] data = new Double[2];
-        
+
         data[0] = input.nextDouble();
         data[1] = input.nextDouble();
-        
-        System.out.println((double)((int)(data[0] * 100000) - (int)(data[1] * 100000))/100000);
+
+        System.out.println((double) ((int) (data[0] * 100000) - (int) (data[1] * 100000)) / 100000);
         input.close();
     }
 }

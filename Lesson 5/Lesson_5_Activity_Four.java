@@ -1,3 +1,4 @@
+
 /*
  * Lesson 5 Coding Activity Question 4
  * 
@@ -16,7 +17,8 @@ Change from $20: $16.5
 import java.util.Scanner;
 
 class Lesson_5_Activity_Four {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         float money = input.nextFloat();
 

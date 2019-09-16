@@ -4,7 +4,6 @@
  * and print "Positive" if it's positive or zero, and print "Negative" otherwise.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_13_Activity_One {
@@ -12,9 +11,9 @@ class Lesson_13_Activity_One {
     {
         Scanner input = new Scanner(System.in);
         Integer num;
-        
+
         num = input.nextInt();
-        
+
         System.out.println(num >= 0 ? "Positive" : "Negative");
         input.close();
     }

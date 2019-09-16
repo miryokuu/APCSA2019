@@ -1,3 +1,4 @@
+
 /*
  * Lesson 6 Coding Activity Question 1
  
@@ -23,14 +24,15 @@ The average is: 7.5
 import java.util.Scanner;
 
 class Lesson_6_Activity_One {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
         double in = 0;
-        
+
         in += input.nextDouble();
         in += input.nextDouble();
-        
-        System.out.println(String.format("The average is: %.9f", (double) in/2 ));
+
+        System.out.println(String.format("The average is: %.9f", (double) in / 2));
         input.close();
     }
 }

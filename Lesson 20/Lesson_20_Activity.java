@@ -1,3 +1,4 @@
+
 /*
  * Lesson 20 Coding Activity 
  * 
@@ -78,7 +79,7 @@ class S_FARTHESTDATA {
     public double south;
     public double east;
     public double west;
-    
+
     S_FARTHESTDATA()
     {
         this.north = -90.0d;
@@ -89,43 +90,42 @@ class S_FARTHESTDATA {
 }
 
 class Lesson_20_Activity {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         S_FARTHESTDATA farthestData = new S_FARTHESTDATA();
         Double[] dataTemp = new Double[2];
         boolean loop = true;
-        
-        while(loop)
+
+        while (loop)
         {
             System.out.println("Please enter the latitude:");
-            dataTemp[0] = input.nextDouble();   //  latitude
+            dataTemp[0] = input.nextDouble(); // latitude
             System.out.println("Please enter the longitude:");
-            dataTemp[1] = input.nextDouble();   //  longitude
-            
-            if(Math.abs(dataTemp[0]) <= 90.0d && Math.abs(dataTemp[1]) <= 180.0d) 
+            dataTemp[1] = input.nextDouble(); // longitude
+
+            if (Math.abs(dataTemp[0]) <= 90.0d && Math.abs(dataTemp[1]) <= 180.0d)
             {
                 farthestData.north = farthestData.north < dataTemp[0] ? dataTemp[0] : farthestData.north;
                 farthestData.south = farthestData.south > dataTemp[0] ? dataTemp[0] : farthestData.south;
-                
+
                 farthestData.east = farthestData.east < dataTemp[1] ? dataTemp[1] : farthestData.east;
                 farthestData.west = farthestData.west > dataTemp[1] ? dataTemp[1] : farthestData.west;
-                
+
                 System.out.println("Would you like to enter another location?");
                 loop = input.nextDouble() == 1;
-            }
-            else 
+            } else
             {
                 System.out.println("Incorrect Latitude or Longitude");
             }
 
         }
-        
-        System.out.println("Farthest North: " + farthestData.north + 
-                "\nFarthest South: " + farthestData.south + 
-                 "\nFarthest East: " + farthestData.east + 
-                 "\nFarthest West: " + farthestData.west);
-        
+
+        System.out.println(
+                "Farthest North: " + farthestData.north + "\nFarthest South: " + farthestData.south
+                        + "\nFarthest East: " + farthestData.east + "\nFarthest West: " + farthestData.west
+        );
+
         input.close();
     }
 }
