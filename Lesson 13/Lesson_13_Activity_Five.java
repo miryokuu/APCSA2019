@@ -12,10 +12,11 @@ class Lesson_13_Activity_Five {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in)
-        //                     Math
+        /*                    Math.Random()*(max+1-min)+min for ranged random integer
+                              Math.Random()*12+1; <--- Just do Max + 1 if your minimum is 1!
+        */
         int firstNum = (int)(Math.Random()*12)+1;
         int secondNum = (int)(Math.Random()*12)+1;
-
         if(input.nextInt() == (firstNum*secondNum)){
             System.out.println("Correct");
         }else{
