@@ -32,7 +32,7 @@ class Lesson_17_Activity_One {
           iterations++;
         }
         
-        System.out.println((double)total/iterations);
+        System.out.println(total/iterations);
         input.close();
         
     }
