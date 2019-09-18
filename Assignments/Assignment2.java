@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  * Rename this class to Main!
  */
-public class Assignment2 {
+public final class Assignment2 {
     public static final int YEAR_LEN = 31104000;
     public static final int MONTH_LEN = 2592000;
     public static final int DAY_LEN = 86400;

@@ -15,7 +15,7 @@ class WrongAnswer extends java.lang.Exception {
 /*
  * Rename this class to Main!
  */
-public class Assignment3 {
+public final class Assignment3 {
     /**
      * god i'm lazy
      * 

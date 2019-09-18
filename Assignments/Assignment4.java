@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Assignment4 {
+final class Assignment4 {
     public static void main(String[] args)
     {
         System.out.println("Type the message to be shortened");

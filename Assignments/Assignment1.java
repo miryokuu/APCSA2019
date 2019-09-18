@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  * Rename this class to Main!
  */
-class Assignment1 {
+final class Assignment1 {
     public static final String TEMPLATE_STRING = "Average website rating: %.15f\n"
             + "Average focus group rating: %.1f\n" + "Average movie critic rating: %.2f\n"
             + "Overall movie rating: %.14f";
