@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -17,33 +18,47 @@ final class Assignment5 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int biggestNum = Integer.MIN_VALUE, smallestNum = Integer.MAX_VALUE, totalNum = 0, arrLen = input.nextInt();
-        Integer[] dataArray = new Integer[arrLen];
-        boolean diffMode = true, pDiffMode, diffmodeConst = true;
+        Double biggestNum = Double.MIN_VALUE + 1, smallestNum = Double.MAX_VALUE - 1, totalNum = 0.0d, diff;
+        int arrLen = input.nextInt();
+
+        if (arrLen < 1)
+        {
+            System.out.print("Not a valid length!");
+            input.close();
+            return;
+        }
+
+        Double[] dataArray = new Double[arrLen];
+        boolean diffMode = true, diffmodeConst = true;
 
         for (int i = 0; i < arrLen; i++)
         {
-            dataArray[i] = input.nextInt();
+            dataArray[i] = input.nextDouble();
             totalNum += dataArray[i];
             biggestNum = biggestNum < dataArray[i] ? dataArray[i] : biggestNum;
             smallestNum = smallestNum > dataArray[i] ? dataArray[i] : smallestNum;
-            
-            if(i > 0)
-            {    
-                diffMode = 0 < (dataArray[i] - dataArray[i-1]); 
-                pDiffMode = diffMode == pDiffMode;
-            }
-            
+
+            if (i > 1)
+            {
+                diff = dataArray[i] - dataArray[i - 1];
+                diffmodeConst = diffmodeConst ? (0 <= diff) == diffMode : false;
+            } else if (i == 1)
+                diffMode = 0 <= (dataArray[i] - dataArray[i - 1]);
+
         }
+
+        System.out.println(biggestNum + " " + smallestNum);
 
         System.out.println(
                 String.format(
-                        "Your array is %s\r\nThe average is %f\r\nThe range is %f\r\nThe array is %s",
-                        dataArray.toString().replace("[", "{").replace("]", "}"), totalNum / arrLen,
-                        biggestNum - smallestNum, diffmodeConst ? diffMode ? "increasing" : "decreasing" : "unsorted"
-
+                        "Your array is %s\r\nThe average is %s\r\nThe range is %s\r\nThe array is %s", Arrays.toString(
+                                dataArray
+                        ).replace("[", "{").replace("]", "}"), Double.toString(totalNum / arrLen), Double.toString(
+                                biggestNum - smallestNum
+                        ),
+                        diffmodeConst ? diffMode ? "sorted in increasing order" : "sorted in decreasing order"
+                                : "unsorted"
                 )
-
         );
 
         input.close();
