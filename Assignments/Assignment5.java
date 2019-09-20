@@ -18,7 +18,9 @@ final class Assignment5 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        Double biggestNum = Double.MIN_VALUE + 1, smallestNum = Double.MAX_VALUE - 1, totalNum = 0.0d, diff;
+        Double biggestNum = -Double.MAX_VALUE, smallestNum = Double.MAX_VALUE, totalNum = 0.0d, diff;
+        //  today I've learned that MIN_VALUE is not double's minimum value it's the smallest nonzero value (magnitude)
+        //  why
         int arrLen = input.nextInt();
 
         if (arrLen < 1)
@@ -47,7 +49,7 @@ final class Assignment5 {
 
         }
 
-        System.out.println(biggestNum + " " + smallestNum);
+        
 
         System.out.println(
                 String.format(
