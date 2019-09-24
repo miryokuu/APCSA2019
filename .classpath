@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con"
-		path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8" />
-	<classpathentry kind="src" path="Lesson 1" />
-	<classpathentry kind="src" path="Lesson 2" />
-	<classpathentry kind="src" path="Lesson 3" />
-	<classpathentry kind="src" path="Lesson 4" />
-	<classpathentry kind="src" path="Lesson 5" />
-	<classpathentry kind="src" path="Lesson 6" />
-	<classpathentry kind="src" path="Assignments" />
-	<classpathentry kind="src" path="Lesson 7" />
-	<classpathentry kind="src" path="Lesson 9" />
-	<classpathentry kind="src" path="Lesson 10" />
-	<classpathentry kind="src" path="Lesson 11" />
-	<classpathentry kind="src" path="Lesson 12" />
-	<classpathentry kind="src" path="Lesson 13" />
-	<classpathentry kind="src" path="Lesson 14" />
-	<classpathentry kind="src" path="Lesson 17" />
-	<classpathentry kind="src" path="Lesson 22" />
-	<classpathentry kind="src" path="Lesson 20" />
-	<classpathentry kind="src" path="Lesson 24" />
-	<classpathentry kind="output" path="bin" />
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="Lesson 1"/>
+	<classpathentry kind="src" path="Lesson 2"/>
+	<classpathentry kind="src" path="Lesson 3"/>
+	<classpathentry kind="src" path="Lesson 4"/>
+	<classpathentry kind="src" path="Lesson 5"/>
+	<classpathentry kind="src" path="Lesson 6"/>
+	<classpathentry kind="src" path="Assignments"/>
+	<classpathentry kind="src" path="Lesson 7"/>
+	<classpathentry kind="src" path="Lesson 9"/>
+	<classpathentry kind="src" path="Lesson 10"/>
+	<classpathentry kind="src" path="Lesson 11"/>
+	<classpathentry kind="src" path="Lesson 12"/>
+	<classpathentry kind="src" path="Lesson 13"/>
+	<classpathentry kind="src" path="Lesson 14"/>
+	<classpathentry kind="src" path="Lesson 17"/>
+	<classpathentry kind="src" path="Lesson 22"/>
+	<classpathentry kind="src" path="Lesson 20"/>
+	<classpathentry kind="src" path="Lesson 24"/>
+	<classpathentry kind="src" path="Lesson 29"/>
+	<classpathentry kind="src" path="Lesson 30"/>
+	<classpathentry kind="src" path="Lesson 30.5"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
