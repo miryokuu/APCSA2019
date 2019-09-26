@@ -39,18 +39,40 @@ public class Assignment6 {
         secondArray = generateArray(arrayLength);
         thirdArray = new Integer[arrayLength*2];
         
-        for (int i = 0; i < thirdArray.length; i++) 
+        /*
+         * this is disgusting
+         */
+        for (int i = 0; i < thirdArray.length && index < arrayLength; i++) 
         {
-            thirdArray[i] = mode ? firstArray[index] : secondArray[index];
+            boolean duplicate = false;
+            int numPending = mode ? firstArray[index] : secondArray[index];
+            for (int in = 0; in < thirdArray.length; in++)
+            {
+                if (thirdArray[in] != null && thirdArray[in] == numPending) 
+                {
+                    duplicate = true;
+                }
+            }
+            
+            if (!duplicate) 
+            {
+                thirdArray[i] = numPending;
+            }
+            else 
+            {
+                i--;
+            }
             
             if(!mode) 
                 index++;
             mode = !mode;
         }
         
+        String finalString = Arrays.toString(thirdArray).replaceAll("(\\[|\\]|,)", " ").replaceAll("  ", " ");
+        
         System.out.println(String.format("First Array:%s", Arrays.toString(firstArray).replaceAll("(\\[|\\]|,)", " ").replaceAll("  ", " ")));
         System.out.println(String.format("Second Array:%s", Arrays.toString(secondArray).replaceAll("(\\[|\\]|,)", " ").replaceAll("  ", " ")));
-        System.out.println(String.format("Merged Array:%s", Arrays.toString(thirdArray).replaceAll("(\\[|\\]|,)", " ").replaceAll("  ", " ")));
+        System.out.println(String.format("Merged Array:%s", finalString.substring(0, finalString.indexOf("n"))));
     }
     
 
