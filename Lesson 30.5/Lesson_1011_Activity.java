@@ -27,13 +27,16 @@
 
 import java.util.Scanner;
 
-class Lesson_1011_Activity {
+@SuppressWarnings("resource")
+class Lesson_1011_Activity {    
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        String octalString = input.nextLine();
         try 
         {
-            System.out.println(Integer.parseInt(input.nextLine(),8));
+            if (octalString.length() > 8) { throw new NumberFormatException(); }
+            System.out.println(Integer.parseInt(octalString,8));
         }
         catch (NumberFormatException error)
         {
