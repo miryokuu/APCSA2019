@@ -24,16 +24,20 @@ public class Assignment6 {
 
     public static void main(String[] args)
     {
-        int arrayLength = 0;
+        Scanner input = new Scanner(System.in);
         Integer[] firstArray, secondArray, thirdArray;
         boolean mode = true;   //  true = first,  false = second
-        int index = 0;
+        int index = 0, arrayLength = 0;
         
         while(arrayLength < 10) 
         {
             System.out.println("Enter an array length (must be 10 or greater):");
-            arrayLength = new Scanner(System.in).nextInt();
+            arrayLength = input.nextInt();
+            // arrayLength = new Scanner(System.in).nextInt(); 
+            // this breaks the test data validation. i have no clue why.
         }
+        
+        input.close();
         
         firstArray = generateArray(arrayLength);
         secondArray = generateArray(arrayLength);
