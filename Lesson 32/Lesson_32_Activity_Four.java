@@ -19,19 +19,15 @@
 *      Seconds: 42
 */
 
-import java.util.Scanner;
-
 class Lesson_32_Activity_Four {
 
-    public static void realTime(long seconds)
+    public static void realTime(int seconds)
     {
-        // Write your code here
+        System.out.println(String.format("Hours: %d\nMinutes: %d\nSeconds: %d", seconds / 60 / 60, (seconds / 60) % 60, seconds % 60));
     }
 
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        realTime(6342);
     }
 }

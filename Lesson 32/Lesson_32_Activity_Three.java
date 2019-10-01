@@ -15,8 +15,6 @@
 * 
 */
 
-import java.util.Scanner;
-
 class Lesson_32_Activity_Three {
 
     public static void swap(int a, int b)
