@@ -1,3 +1,4 @@
+
 /*
 * Lesson 32 Coding Activity 2
 * 
@@ -16,22 +17,30 @@
 * 
 */
 
-
-import java.util.Scanner;
+import java.util.Arrays;
 
 class Lesson_32_Activity_Two {
-         
-        
-        /*fill in the rest of the method declaration monthDays( )
+    public static void monthDays(int nMonth)
+    {
+        if (nMonth == 2)
         {
-        //Write your code here  
-        }
-        */
-      
-        public static void main(String[] args)
+            System.out.println(28);
+            return;
+        } else if (Arrays.binarySearch(new int[] { 1, 3, 5, 7, 8, 10, 12 }, nMonth) >= 0)
         {
-        /*
-         * Test your method here
-         */
+            System.out.println(31);
+            return;
+        } else
+        {
+            System.out.println(30);
+            return;
         }
+    }
+
+    public static void main(String[] args)
+    {
+        monthDays(1);
+        monthDays(2);
+        monthDays(4);
+    }
 }

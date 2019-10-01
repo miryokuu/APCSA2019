@@ -1,3 +1,4 @@
+
 /*
 * Lesson 32 Coding Activity 4
 * 
@@ -18,20 +19,19 @@
 *      Seconds: 42
 */
 
-
 import java.util.Scanner;
 
 class Lesson_32_Activity_Four {
-      
-        /*fill in the rest of the method declaration realTime( )
-        {
-        //Write your code here
-        }
-        */
-        public static void main(String[] args)
-        {
+
+    public static void realTime(long seconds)
+    {
+        // Write your code here
+    }
+
+    public static void main(String[] args)
+    {
         /*
          * Test your method here
          */
-        }
+    }
 }

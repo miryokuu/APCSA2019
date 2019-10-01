@@ -14,21 +14,57 @@
 * Calling monthName(8) should print August to the screen.
 */
 
-
-import java.util.Scanner;
-
 class Lesson_32_Activity_One {
-      
-         /*fill in the rest of the method declaration monthName()
-          {
-          //Write your code here
-          }
-          */
-        
-        public static void main(String[] args)
-         {
-         /*
-          * Test your method here
-          */
-         }
+    public static void monthName(int nMonth)
+    {
+        String month;
+        switch (nMonth)
+        {
+        case 1:
+            month = "January";
+            break;
+        case 2:
+            month = "Febuary";
+            break;
+        case 3:
+            month = "March";
+            break;
+        case 4:
+            month = "April";
+            break;
+        case 5:
+            month = "May";
+            break;
+        case 6:
+            month = "June";
+            break;
+        case 7:
+            month = "July";
+            break;
+        case 8:
+            month = "August";
+            break;
+        case 9:
+            month = "September";
+            break;
+        case 10:
+            month = "October";
+            break;
+        case 11:
+            month = "November";
+            break;
+        case 12:
+            month = "December";
+            break;
+        default:
+            throw new RuntimeException("no");
+        }
+
+        System.out.println(month);
+    }
+
+    public static void main(String[] args)
+    {
+        monthName(8);
+    }
 }

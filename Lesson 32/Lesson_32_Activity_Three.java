@@ -1,3 +1,4 @@
+
 /*
 * Lesson 32 Coding Activity 3
 * 
@@ -14,21 +15,17 @@
 * 
 */
 
-
 import java.util.Scanner;
 
 class Lesson_32_Activity_Three {
-      
-         /*fill in the rest of the method declaration here swap()
-          {
-          //Write your code here
-          }
-          */
-        
-        public static void main(String[] args)
-         {
-         /*
-          * Test your method here
-          */
-         }
+
+    public static void swap(int a, int b)
+    {
+        System.out.print(b + " " + a);
+    }
+
+    public static void main(String[] args)
+    {
+        // i don't write unit tests
+    }
 }
