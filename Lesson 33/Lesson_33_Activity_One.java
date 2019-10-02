@@ -18,8 +18,6 @@
  * 
  */
 
-import java.util.Scanner;
-
 class Lesson_33_Activity_One {
 
     public static void upper(String[] string) 

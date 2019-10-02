@@ -15,18 +15,18 @@
  * This method must be called printit() and it must take an int[] parameter.
  */
 
-import java.util.Scanner;
-
 class Lesson_33_Activity_Three {
 
-    /*
-     * fill in the rest of printit() { //Write your code here }
-     */
+    public static void printit(int[] inInt) 
+    {
+        for (int num : inInt) 
+        {
+            System.out.print(num + " ");
+        }
+    }
 
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        //  no 
     }
 }

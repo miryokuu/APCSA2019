@@ -15,17 +15,15 @@
  * This method must be called reverse() and it must take an int[] parameter. 
  */
 
-import java.util.Scanner;
-
 class Lesson_33_Activity_Four {
 
-    /*
-     * fill in the rest of the method reverse() { //Write your code here }
-     */
+    public static void reverse(int[] inInt) 
+    {
+        //
+    }
+    
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        //
     }
 }
