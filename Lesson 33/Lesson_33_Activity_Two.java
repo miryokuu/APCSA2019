@@ -20,15 +20,18 @@
 import java.util.Scanner;
 
 class Lesson_33_Activity_Two {
+    public static int numgen(int max, int offset)
+    {
+        return (int) (Math.random() * max) + offset;
+    }
 
-    /*
-     * fill in the rest of randomize() { //Write your code here }
-     */
+    protected static void randomize(int[] inInt) 
+    {
+        
+    }
 
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        
     }
 }

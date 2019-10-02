@@ -22,14 +22,16 @@ import java.util.Scanner;
 
 class Lesson_33_Activity_One {
 
-    /*
-     * fill in the rest of the method upper() { //Write your code here }
-     */
+    public static void upper(String[] string) 
+    {
+        for (int i = 0; i < string.length; i++ ) 
+        {
+            string[i] = string[i].toUpperCase();
+        }
+    }
 
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        upper(new String[] {"hi"});
     }
 }
