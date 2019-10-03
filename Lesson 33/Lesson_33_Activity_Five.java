@@ -20,18 +20,19 @@
  * to {1, 2, 100, 3, 4}.
  */
 
-import java.util.Scanner;
-
 class Lesson_33_Activity_Five {
 
-    /*
-     * fill in the rest of method insertValue() { //Write your code here }
-     */
+    public static void insertValue(int[] inArray, int num, int index) 
+    {
+        for(int i = inArray.length - 1; i > index; i--) 
+        {
+            inArray[i] = inArray[i - 1];
+        }
+        inArray[index] = num;
+    }
 
     public static void main(String[] args)
     {
-        /*
-         * Test your method here
-         */
+        insertValue(new int[] {1,2,3,4,5}, 100, 2);
     }
 }

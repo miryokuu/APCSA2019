@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /*
  * Lesson 33 Coding Activity 4
  * 
@@ -19,11 +21,21 @@ class Lesson_33_Activity_Four {
 
     public static void reverse(int[] inInt) 
     {
-        //
+        int[] outInt = new int[inInt.length];
+        
+        for(int i = 0, ii = inInt.length - 1; i < inInt.length; i++) 
+        {
+            outInt[i] = inInt[ii];
+            ii--;
+        }
+        
+        for(int i = 0; i < inInt.length; i++) 
+        {
+            inInt[i] = outInt[i];
+        }
     }
     
     public static void main(String[] args)
     {
-        //
     }
 }
