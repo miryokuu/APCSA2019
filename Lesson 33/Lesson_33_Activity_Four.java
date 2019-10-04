@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /*
  * Lesson 33 Coding Activity 4
  * 

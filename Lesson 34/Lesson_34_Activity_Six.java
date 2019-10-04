@@ -14,15 +14,16 @@
  * 
  */
 
-import java.util.Scanner;
-
 class Lesson_34_Activity_Six {
 
     public static boolean allPositive(int[] a)
     {
-        // Write your code here
-        // Change the return value as you see fit
-        return false;
+        boolean bOut = true;
+        for(int num : a)
+        {
+            bOut = num > 0 && bOut;
+        }
+        return bOut;
     }
 
     public static void main(String[] args)

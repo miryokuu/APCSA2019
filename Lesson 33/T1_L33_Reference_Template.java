@@ -5,10 +5,10 @@
 
 import java.io.*;
 import static java.lang.System.*;
-
 import java.util.Scanner;
 import java.lang.Math;
 
+@SuppressWarnings("unused")
 class t1_lesson33_reference_template {
 
     public static void addOne(int c)
