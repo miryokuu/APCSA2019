@@ -23,10 +23,8 @@ public class Assignment7 {
         if(str.length() < 3 || str.length() > 15)
             return false;
         
-        str = str.toLowerCase().replace("a", "4").replace("e", "3").replace("o", "0");
-        
         //  String reversing- see Lesson 29 Activity Two on how this really wants us to solve it.
-        return str.equals(new StringBuilder(str).reverse().toString());
+        return str.equals(new StringBuilder(str.toLowerCase().replace("a", "4").replace("e", "3").replace("o", "0")).reverse().toString());
     }
     
     public static double numberScramble(double num) 
