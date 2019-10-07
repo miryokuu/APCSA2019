@@ -15,52 +15,68 @@
  * To simulate this, copy all four methods into the single Code Runner box.
  */
 
-
 import java.util.Scanner;
 
 class Lesson_35_Activity {
-  
-    /*randomize()
-     * This method must have two int paramters called min and max. 
-     * This method returns a random int between min and max inclusive. 
+        
+    /**
+     * Returns a random int between min and max inclusive. Must have two int parameters.
+     * 
+     * personally, this does a terrible job of explaining what the parameter wants.
+     *
+     * @param max
+     * @param min
+     * @return int
+     */
+    public static int randomize(int fParam, int sParam)
     {
-    //Write your code here
-    //Change the return value as you see fit
+        boolean mode = fParam > sParam;
+        int max = mode ? fParam : sParam;
+        int min = mode ? sParam : fParam;
+        
+        return (int) (Math.random() * (max - min)) + min;
     }
-   */
-     
-     /*randomize()
-      * This method must have one int parameter max. 
-      * Returns a random int between 0 and max inclusive.
+
+    /**
+     * Returns a random int between 0 and max inclusive. Must have one int parameter.
+     * 
+     * @param max
+     * @return int
+     */
+    public static int randomize(int max)
     {
-    //Write your code here
-    //Change the return value as you see fit
+        return (int)(Math.random() * max);
     }
-    */
-  
-    /*randomize()
-     * This method must have two double parameters. 
-     * This method returns a random double between min and max inclusive.
+
+    /**
+     * Returns a random double between min and max. Must have two double parameters.
+     * 
+     * @param max
+     * @param min
+     * @return double
+     */
+    public static double randomize(double fParam, double sParam)
     {
-    //Write your code here
-    //Change the return value as you see fit 
-    }    
-    */
-  
-    /*randomize()
-     * This method must have one double parameter.
-     * This method returns a random double between 0 and max inclusive.
+        boolean mode = fParam > sParam;
+        double max = mode ? fParam : sParam;
+        double min = mode ? sParam : fParam;
+        
+        return (int) (Math.random() * (max - min)) + min;
+    }
+
+    /**
+     * Returns a random double between 0 and max. Must have one double parameter.
+     * 
+     * @param max
+     * @return double
+     */
+    public static double randomize(double max)
     {
-    //Write your code here
-    //Change the return value as you see fit
-    }    
-    */
-     
+        return Math.random() * max;
+    }
+
     public static void main(String[] args)
-     {
-     /*
-      * Test your method here
-      * Copy and paste this entire class to Code Runner.
-      */
+    {
+        // tests
     }
 }
