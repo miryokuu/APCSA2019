@@ -16,8 +16,6 @@
  * To simulate this, copy all four methods into the single Code Runner box.
  */
 
-import java.util.Scanner;
-
 class Lesson_35_Activity {
 
     /**

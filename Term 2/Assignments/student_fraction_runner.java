@@ -24,7 +24,7 @@ public class student_fraction_runner {
         Fraction fraction4 = new Fraction(24, 6);
         System.out.println("Fraction 4: " + fraction4);
         System.out.println("As a mixed number: " + fraction4.mixedNumber());
-        fraction3.add(1, -2);
+        fraction4.add(1, -2);
         System.out.println("Attempt to add 1/-2: " + fraction4);
         System.out.println();
 

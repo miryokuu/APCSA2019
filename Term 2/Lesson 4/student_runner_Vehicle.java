@@ -1,6 +1,4 @@
 import java.io.*;
-import static java.lang.System.*;
-import java.util.Scanner;
 
 public class student_runner_Vehicle {
     public static void main(String str[]) throws IOException
