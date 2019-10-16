@@ -26,7 +26,7 @@ public class Student {
     @Override
     public String toString() 
     {
-        return String.format("%s, %s\nGPA: %f\nGrade Level: %d id # %d", this.firstName, this.lastName, this.GPA, this.gradeLevel, Student.studentID);
+        return String.format("%s, %s\nGPA: %.1f\nGrade Level: %d id # %d", this.lastName, this.firstName, this.GPA, this.gradeLevel, Student.studentID);
     }
 
 }
