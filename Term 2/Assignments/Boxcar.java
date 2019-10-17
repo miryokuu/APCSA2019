@@ -101,13 +101,17 @@ public class Boxcar
 
     /**
      *  The isFull method returns true if numUnits is equal to 10, false otherwise.
+     *  
+     *  @return boolean
      */
     public boolean isFull()
     {
         return numUnits == 10;
     }
 
-    // The callForRepair method sets the variable repair to true, and numUnits to 0.
+    /**
+     * The callForRepair method sets the variable repair to true, and numUnits to 0.
+     */
     public void callForRepair()
     {
         this.repair = true;
