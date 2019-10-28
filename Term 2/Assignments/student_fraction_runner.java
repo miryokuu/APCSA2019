@@ -48,8 +48,6 @@ public class student_fraction_runner {
     
     public static void main_2(String str[]) throws IOException {
         
-        System.out.println(Fraction.gcd(100, 10));
-        
         Fraction fraction1 = new Fraction(8, 10);
         System.out.println("Fraction 1: " + fraction1);
         

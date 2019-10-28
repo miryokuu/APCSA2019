@@ -30,13 +30,13 @@ public class Fraction implements java.lang.Comparable<Object> {
     {
         this.numerator = n > 0 ? n : 1;
         this.denominator = d > 0 ? d : 1;
-        
+
         if(ASSIGNMENT_4)
             simplify();
     }
 
     /**
-     * Returns the fraction as a string in the format “numerator/denominator”. For example 1/2 or 5/3.
+     * Returns the fraction as a string in the format "numerator/denominator". For example 1/2 or 5/3.
      *
      * @return String in the format numerator/denominator
      */
@@ -73,6 +73,9 @@ public class Fraction implements java.lang.Comparable<Object> {
         
         this.numerator = this.numerator * d + n * this.denominator;
         this.denominator *= d; 
+        
+        if(ASSIGNMENT_4)
+            simplify();
     }
     
     /*
@@ -121,7 +124,23 @@ public class Fraction implements java.lang.Comparable<Object> {
     @Override
     public int compareTo(Object other)
     {
-        Fraction target = (Fraction)other;
-        return 0;
+        Fraction target;
+        
+        try {
+            target = (Fraction)other;
+        }
+        catch (ClassCastException e) {
+            return -2;
+        } 
+        
+        //  The least common multiple (lcm) of a and b is their product 
+        //  divided by their greatest common divisor (gcd) ( i.e. lcm(a, b) = ab/gcd(a,b)).
+        int lcm = this.denominator / gcd(this.denominator, target.denominator) * target.denominator;
+        
+        int iFirstNum = this.numerator * (lcm / this.denominator);
+        int iSecondNum = target.numerator * (lcm / target.denominator);
+        
+        return iFirstNum == iSecondNum ? 0 : iFirstNum > iSecondNum ? 1 : -1;
+        
     }
 }
