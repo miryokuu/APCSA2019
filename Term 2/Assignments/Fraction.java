@@ -36,7 +36,7 @@ public class Fraction implements java.lang.Comparable<Object> {
     }
 
     /**
-     * Returns the fraction as a string in the format ìnumerator/denominatorî. For example 1/2 or 5/3.
+     * Returns the fraction as a string in the format ‚Äúnumerator/denominator‚Äù. For example 1/2 or 5/3.
      *
      * @return String in the format numerator/denominator
      */
@@ -105,8 +105,9 @@ public class Fraction implements java.lang.Comparable<Object> {
      */
     void simplify() 
     {
-        numerator = numerator / gcd(numerator, denominator);
-        denominator = denominator / gcd(numerator, denominator);
+        int gcd = gcd(numerator, denominator);
+        numerator = numerator / gcd;
+        denominator = denominator / gcd;
     }
 
     /**
@@ -115,7 +116,7 @@ public class Fraction implements java.lang.Comparable<Object> {
      * and return 1 if this fraction is greater than the fraction other. 
      * Hint: To compare the two fractions, it will help to first convert them to fractions with a common (equal) denominator.
      *
-     * @return 0|1
+     * @return -1|0|1
      */
     @Override
     public int compareTo(Object other)
