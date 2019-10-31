@@ -4,7 +4,7 @@ public class Student {
     public String firstName, lastName;
     public int gradeLevel;
     public double GPA;
-    
+
     Student()
     {
         this.firstName = "None";
@@ -13,7 +13,7 @@ public class Student {
         this.GPA = 0d;
         Student.studentID++;
     }
-    
+
     Student(String firstName, String lastName, int gradeLevel, double gpa)
     {
         this.firstName = firstName;
@@ -22,11 +22,14 @@ public class Student {
         this.GPA = gpa >= 0.0 && gpa <= 4.5 ? gpa : 0d;
         Student.studentID++;
     }
-    
+
     @Override
-    public String toString() 
+    public String toString()
     {
-        return String.format("%s, %s\nGPA: %.1f\nGrade Level: %d id # %d", this.lastName, this.firstName, this.GPA, this.gradeLevel, Student.studentID);
+        return String.format(
+                "%s, %s\nGPA: %.1f\nGrade Level: %d id # %d", this.lastName, this.firstName, this.GPA, this.gradeLevel,
+                Student.studentID
+        );
     }
 
 }
