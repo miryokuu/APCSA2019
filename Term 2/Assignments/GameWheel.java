@@ -43,9 +43,23 @@ public class GameWheel {
      * the red slices will still be at odd indices, the black slices at multiples of
      * 10, and the blue slices at all other even indices).
      */
-    private void scramble()
+    private void scramble() 
     {
-        /* Add your code here */
+        for (int i = 0; i < slices.size(); i++)
+        {
+            int index = (int)Math.random() * slices.size();
+            
+            while (!slices.get(i).getColor().equals(slices.get(index).getColor())) 
+            {
+                index++;
+                
+                if (index > slices.size())
+                    index = (int)Math.random() * slices.size();
+            }
+
+            slices.set(index, slices.set(i, slices.get(index)));
+        }
+        
     }
 
     // Helper method which initializes the slices in the wheel
@@ -61,5 +75,10 @@ public class GameWheel {
             else
                 slices.add(new Slice("blue", i * 100));
         }
+    }
+    
+    public List<Slice> getSlices() 
+    {
+        return slices;
     }
 }
