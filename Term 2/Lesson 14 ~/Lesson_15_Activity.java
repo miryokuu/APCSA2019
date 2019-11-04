@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  *	APCSA Term 2 Lesson 17
  *	@author miryokuu

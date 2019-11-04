@@ -10,7 +10,7 @@ public class Student_Runner_FreightTrain {
         FreightTrain emptyTrain = new FreightTrain(0);
         System.out.println("Printing emptyTrain (n=0):\n" + emptyTrain + "\n");
         FreightTrain negativeTrain = new FreightTrain(-7);
-        System.out.println("Printing negativeTrain (n=-7):\n" + emptyTrain + "\n");
+        System.out.println("Printing negativeTrain (n=-7):\n" + negativeTrain + "\n");
         FreightTrain trainWithFiveCars = new FreightTrain(5);
         System.out.println("Printing trainWithFiveCars (n=5):\n" + trainWithFiveCars + "\n");
 

@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  *	APCSA Term 2 Assignment 5 Game Wheel Main class.
  *	@author miryokuu

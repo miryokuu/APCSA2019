@@ -1,8 +1,6 @@
-
 /* Term 2 Assignment 5 - Game Wheel */
 /* GameWheel class*/
 import java.util.*;
-import java.lang.*;
 
 public class GameWheel {
     // List of slices making up the wheel
