@@ -1,24 +1,31 @@
 
-public class TeamMember<T> implements Comparable<T> {
+public class TeamMember {
 
     private String fullName;
-    private String idString;
+    public String idString;
 
     TeamMember(String name, String id)
     {
         String fullname = "";
-        for (String namestr : name.split(" ")) 
+        for (String namestr : name.split("\\s|\\t")) 
         {
-            fullname += namestr.substring(0,1).toUpperCase() + namestr.substring(1).toLowerCase(); 
+            fullname += namestr.substring(0,1).toUpperCase() + namestr.substring(1).toLowerCase();
+            try {
+                fullname += name.charAt(name.indexOf(namestr) + namestr.length());
+            } catch (java.lang.StringIndexOutOfBoundsException e) 
+            {
+                //
+            }
         }
+
         this.fullName = fullname;
         this.idString = id;
     }
     
-    @Override
-    public int compareTo(T arg0)
+    public int compareTo(TeamMember arg0)
     {
-        return fullName.compareTo(arg0.toString());
+        int result = idString.compareTo(arg0.idString);
+        return result > 0 ? 1 : result == 0 ? 0 : -1;
     }
 
     @Override
