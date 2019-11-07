@@ -7,7 +7,7 @@ public class TeamMember {
     TeamMember(String name, String id)
     {
         String fullname = "";
-        for (String namestr : name.split("\\s|\\t")) 
+        for (String namestr : name.split("\\s")) 
         {
             fullname += namestr.substring(0,1).toUpperCase() + namestr.substring(1).toLowerCase();
             try {

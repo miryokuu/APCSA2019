@@ -18,14 +18,31 @@ public class TeamMember_Main {
     {
         Scanner input = new Scanner(System.in);
         ArrayList<TeamMember> list = new ArrayList<TeamMember>();
+        System.out.println("Enter the next name:");
         String in = input.nextLine();
         
-        while(!in.equals("STOP")) 
+        while(!in.toUpperCase().equals("STOP")) 
         {
-            list.add(new TeamMember(in, input.nextLine()));
+            System.out.println("Enter the next ID:");
+            TeamMember addi = new TeamMember(in, input.nextLine());
+            
+            int index = 0;
+            
+            for(int i = 0; i < list.size(); ++i) 
+            {
+                if (list.get(i).compareTo(addi) <= 0) 
+                    index = i + 1;
+            }
+            
+            list.add(index, addi);
+            
+            System.out.println("Enter the next name:");
             in = input.nextLine();
         }
         
+        
+        System.out.println(list.toString());
+        input.close();
         
     }
 
