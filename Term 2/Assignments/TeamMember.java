@@ -1,4 +1,6 @@
-
+/**
+ *  APCSA Term 2 Assignment 6 TeamMember
+ */
 public class TeamMember {
 
     private String fullName;
