@@ -51,6 +51,8 @@ public class Battleship {
         // As long as ships remain, play game
         while (!b.gameOver())
         {
+            System.out.println(b.foundShip(4));
+            
             // Get row and column to shoot
             System.out.println("Input row");
             int r = scan.nextInt();
