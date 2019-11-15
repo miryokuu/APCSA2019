@@ -26,8 +26,10 @@ public class T1_Assignment7 {
 
         // String reversing- see Lesson 29 Activity Two on how this really wants us to
         // solve it.
-        return str
-                .equals(new StringBuilder(str.toLowerCase().replace("a", "4").replace("e", "3").replace("o", "0")).reverse().toString());
+        str = str.toLowerCase().replace("4", "a").replace("3", "e").replace("0", "o");
+        
+        return str.toLowerCase()
+                .equals(new StringBuilder(str).reverse().toString());
     }
 
     public static double numberScramble(double num)
