@@ -19,7 +19,7 @@ class Lesson_34_Activity_Two {
 
     public static double average(int[] a)
     {
-        int out = 0;
+        double out = 0;
         for (int num : a)
         {
             out += num;
