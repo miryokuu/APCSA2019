@@ -27,7 +27,7 @@ class Lesson_33_Activity_Two {
     {
         for (int i = 0; i < inInt.length; i++)
         {
-            inInt[i] = numgen(10, 100);
+            inInt[i] = numgen(90, 10);
         }
     }
 
